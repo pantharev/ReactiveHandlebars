@@ -1,0 +1,30 @@
+{{!-- <div class="container-fluid" style="background: #ffffff;">
+  <div class="row mt-1" id="sortable-widgets">
+    {{#each widgetsPosArr as |widget|}}
+      <div id="widget-{{@index}}" class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+        
+        <div class="panel panel-default neu-panel">
+          <div class="panel-body">
+            <div style="height: 750px; max-height: 750px;" id="{{widget}}"></div>
+          </div>
+        </div>
+        
+      </div>
+    {{/each}}
+  </div> --}}
+
+<div class="w-full">
+  <button id="create-todo-btn" class="bg-green-400 rounded-md p-3">Create Todo</button>
+  <input id="todo-title" type="text" placeholder="Title" />
+  <input id="todo-description" type="text" placeholder="Description" />
+  <div class="flex gap-x-5">
+    {{#each todos as |todo|}}
+      <div class="flex-1 flex-col">
+        <div class="bg-blue-400 rounded-lg text-white p-5 text-center">{{todo.title}}</div>
+        <div>
+          {{todo.description}}
+        </div>
+      </div>
+    {{/each}}
+  </div>
+</div>

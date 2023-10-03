@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HandleBarsReactive</title>
+
+    <!-- Jquery V3.7.1 -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <!-- RxJS v7.8.1 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/7.8.1/rxjs.umd.min.js" integrity="sha512-D9LDs8YUUVa4V9Gl4Zb+xqRAc7RCzooR3+zzebgK2RMu/KU+dh90pbjEEMzPiSyRSGbSp9j1pZnrO4joGa5WEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Handlebars v4.7.8 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.8/handlebars.min.js" integrity="sha512-E1dSFxg+wsfJ4HKjutk/WaCzK7S2wv1POn1RRPGh8ZK+ag9l244Vqxji3r6wgz9YBf6+vhQEYJZpSjqWFPg9gg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Jquery bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+    <!-- Superagent (http client) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/superagent/8.1.2/superagent.min.js" integrity="sha512-kJofMV1AWN/pR7qKkjkGvcIylm0tjO5h5xWVX9mhy/a+gKHxWi0Z/9P9X13ToLcS1rSm8LW6iaGsIy8HqzGCVw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <ul class="flex justify-start gap-x-5 ml-5">
+        <li><button onclick="content('todos')" class="underline text-sky-500">Todos</button></li>
+        <li><button onclick="content('about')" class="underline text-sky-500">About</button></li>
+    </ul>
+
+    <div class="content" id="content-todos">
+        <div class="flex justify-center gap-x-5">
+            <div class="todo-list-container"></div>
+            <div class="todo-list-container"></div>
+        </div>
+    </div>
+
+    <div class="content" id="content-about">
+        <div class="flex justify-center gap-x-5">
+            <div class="about-container"></div>
+            <div class="about-container"></div>
+        </div>
+    </div>
+
+    <script src="/javascripts/globals.js"></script>
+    <script src="/javascripts/helpers.js"></script>
+    <script src="/javascripts/templates.js"></script>
+    <script type="module" src="/javascripts/main.js"></script>
+</body>
+</html>

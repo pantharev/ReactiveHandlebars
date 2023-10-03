@@ -1,0 +1,10 @@
+Project show-casing Reactive Handlebar elements.
+
+using only the front-end libraries handlebars and rxjs to create a reactive application that reloads the view based on context or state changes.
+
+performance may vary and not yet tested completely.
+
+functions similar to angular/react components,
+where you can use dependency injection to pass contexts into the children. ...
+
+[] - tech: jquery, rxjs, handlebars, gulp, express, nodejs.
